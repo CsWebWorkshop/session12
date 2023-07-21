@@ -1,0 +1,52 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+/* 
+@font-face{
+    font-family: "test";
+    src: url('./../font/Vazir.ttf');
+} */
+
+:root{
+    --test-color: #00f;
+    --font: "arial";
+    --sm: 25px;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+.container{
+    min-height: 100vh;
+    /* background-color: #00ff0050; */
+    background-color: var(--test-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: var(--sm);
+}
+
+.item{
+    min-width: 150px;
+    height: 400px;
+    background-color: #f00;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .item{
+        min-width: 250px;
+        background-color: purple;
+    }    
+}
+@media screen and (max-width: 320px) {
+    .item{
+        min-width: 250px;
+        /* background-color: blue; */
+        background-color: var(--test-color);
+    }    
+}
